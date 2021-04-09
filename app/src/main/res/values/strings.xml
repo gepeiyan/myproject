@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">first</string>
+    <string name="school">swufe</string>
+    <string name="happy">Happy\n Birthday</string>
+    <string name="word">Best Wish</string>
+    <string name="my">GPY</string>
+    <string name="reset_label">RESET</string>
+    <string name="team1">TeamA</string>
+    <string name="zero">0</string>
+    <string name="point1">+1 POINTS</string>
+    <string name="point2">+2 POINTS</string>
+    <string name="point3">+3 POINTS</string>
+    <string name="team2">TeamB</string>
+</resources>
