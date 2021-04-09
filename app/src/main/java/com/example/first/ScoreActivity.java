@@ -29,4 +29,8 @@ public class ScoreActivity extends AppCompatActivity {
         score1+=3;
         show();
     }
+    public void btn2(View v){
+        score1+=2;
+        show();
+    }
 }
