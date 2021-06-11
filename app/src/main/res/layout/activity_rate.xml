@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RateActivity">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="币种"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inp2"
+        android:layout_width="330dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="input RMB"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/result2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:text="汇率转换后"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,8 +7,15 @@
     <string name="reset_label">RESET</string>
     <string name="team1">TeamA</string>
     <string name="zero">0</string>
-    <string name="point1">+1 POINTS</string>
+    <string name="point1">+1 POINT</string>
     <string name="point2">+2 POINTS</string>
     <string name="point3">+3 POINTS</string>
     <string name="team2">TeamB</string>
+    <string name="dollar">DOLLAR</string>
+    <string name="euro">EURO</string>
+    <string name="won">WON</string>radio_
+    <string name="save">SAVE</string>
+    <string name="radio_reset">调整汇率</string>
+
+
 </resources>

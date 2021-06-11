@@ -9,25 +9,57 @@ import android.view.View;
 import android.widget.TextView;
 
 public class ScoreActivity extends AppCompatActivity {
-
-    private static final String TAG = "Scoreactivity";
-    int score1 =0;
-    int score2 =0;
+    TextView scorea;
+    TextView score;
+    private static final String TAG = "Selectivity";
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
+
+        score=(TextView)findViewById(R.id.score);
+        scorea=(TextView)findViewById(R.id.scorea);
     }
-    private void show(){
-        Log.i(TAG,"show:score"+score1);
-        TextView show =findViewById(R.id.zero);
-        show.setText(String.valueOf(score1));
+    private void showScorea(int inc){
+        Log.i("show","inc="+inc);
+        String oldScorea =(String)scorea.getText();
+        int newScorea=Integer.parseInt(oldScorea)+inc;
+
+        scorea.setText(""+newScorea);
+    }
+    private void showScore(int inc){
+        Log.i("show","inc="+inc);
+        String oldScore =(String)score.getText();
+        int newScore=Integer.parseInt(oldScore)+inc;
+
+        score.setText(""+newScore);
     }
 
-    public void btn3(View v){
-        score1+=3;
-        show();
+    public void btnAdd3a(View v){
+        showScorea(3);
     }
+    public void btnAdd2a(View v){
+        showScorea(2);
+    }
+    public void btnAdd1a(View v){
+        showScorea(1);
+    }
+    public void btnAdd3(View v){
+        showScore(3);
+    }
+    public void btnAdd2(View v){
+       showScore(2);
+    }
+    public void btnAdd1(View v){
+        showScore(1);
+    }
+   
+    public void btnReset(View btn){
+        score.setText("0");
+        scorea.setText("0");
+    }
+
 
 }
