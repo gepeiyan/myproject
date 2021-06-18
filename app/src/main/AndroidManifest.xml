@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ViewpageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".FinalActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,7 +55,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".FirstListActivity">
             <intent-filter>
